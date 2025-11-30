@@ -103,6 +103,3 @@ web-audit-extension/
 
 * Chrome 114+
 * Manifest Version 3 support
-
-
-Just ask: **"Generate pro README"**
