@@ -1,0 +1,89 @@
+/* Global dark style */
+body {
+  background: #0f0f0f;
+  color: #e8e8e8;
+  font-family: "Inter", Arial, sans-serif;
+  width: 320px;
+  padding: 0;
+  margin: 0;
+}
+
+/* Header */
+.header {
+  padding: 15px;
+  background: #111;
+  border-bottom: 1px solid #222;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 20px;
+  margin: 0;
+  color: #4da3ff;
+  letter-spacing: 0.5px;
+}
+
+.header p {
+  margin: 5px 0 0;
+  font-size: 11px;
+  color: #999;
+}
+
+/* Buttons */
+.actions {
+  padding: 15px;
+}
+
+.btn {
+  width: 100%;
+  padding: 10px 0;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 10px;
+  background: #1c1c1c;
+  color: #eee;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  background: #262626;
+}
+
+.btn.primary {
+  background: #007bff;
+}
+
+.btn.primary:hover {
+  background: #3395ff;
+}
+
+/* Last scan */
+.section {
+  padding: 10px 15px 20px;
+}
+
+.section h2 {
+  color: #4da3ff;
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+
+.output {
+  background: #161616;
+  padding: 10px;
+  border-radius: 5px;
+  height: 130px;
+  overflow-y: auto;
+  font-size: 12px;
+  border: 1px solid #222;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 10px;
+  font-size: 10px;
+  color: #666;
+}

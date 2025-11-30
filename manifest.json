@@ -1,0 +1,45 @@
+{
+  "manifest_version": 3,
+  "name": "Web Audit Pro – Bug Hunting & TPRM",
+  "description": "Secret Key Scanner, Sensitive Directory Finder, Security Headers Analyzer, Risk Scoring, Exportable HTML Reports.",
+  "version": "1.0",
+  "icons": {
+    "16": "assets/icon16.png",
+    "48": "assets/icon48.png",
+    "128": "assets/icon128.png"
+  },
+  "permissions": [
+    "storage",
+    "tabs",
+    "scripting",
+    "activeTab"
+  ],
+  "host_permissions": ["<all_urls>"],
+
+  "background": {
+    "service_worker": "service_worker.js"
+  },
+
+  "action": {
+    "default_popup": "popup/popup.html"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content/main.js"],
+      "run_at": "document_end"
+    }
+  ],
+
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "report/report.html",
+        "report/report.js",
+        "report/report.css"
+      ],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
